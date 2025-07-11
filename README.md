@@ -96,5 +96,11 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 - (Optional) Deploy on Azure / Flask API
 
 ---
+## 🔗 Resources
+
+- Dataset Source: [Telco Customer Churn on Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+
+- YouTube Tutorial Inspiration: IR Siddharthan – Project #22
+
 
 
