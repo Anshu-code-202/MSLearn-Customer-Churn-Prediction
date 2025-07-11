@@ -34,7 +34,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
   - `scikit-learn` – preprocessing, ML models, evaluation
   - `xgboost` – advanced boosting models
   - `imblearn` – SMOTE for class imbalance handling
-  - `pickle` – model serialization
+  - `pickle` – model serialization,saving encoders and models
 
 ---
 
