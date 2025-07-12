@@ -4,7 +4,7 @@ Predicting customer churn using ML (Telco dataset) — MS Learn project.
 
 This project is part of Microsoft Learn’s AI/ML module. It focuses on predicting customer churn using classical machine learning algorithms like Decision Trees and XGBoost, along with data preprocessing, SMOTE for imbalance handling, and business insight extraction.
 
-## 2. Dataset
+## 1. Dataset
 
 The dataset used for this project is the **Telco Customer Churn dataset**, publicly available on Kaggle. It includes customer demographics, services subscribed, and account information.
 
@@ -24,7 +24,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 
 ---
 
-## 3. Technologies Used
+## 2. Technologies Used
 
 - **Language**: Python
 - **Notebook**: Jupyter Notebook
@@ -38,14 +38,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 
 ---
 
-## 📈 Project Workflow
 
-### ✅ 1. Problem Definition
-- Predict if a customer will churn.
-- Churn means the customer is no longer subscribed to the service.
-
-### ✅ 2. Data Loading
-- CSV file `Telco-Customer-Churn.csv` was loaded using `pandas`.
 
 ### ✅ 3. Data Cleaning & Preprocessing
 - `customerID` column dropped (non-predictive).
@@ -68,6 +61,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 
 ---
 
+
 ## 📊 Sample Visualizations
 
 > *(Add graphs/screenshots if uploading to GitHub)*
@@ -86,14 +80,77 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 5. Initial visual analysis of numerical features completed.
 
 ---
+#### Encoding Categorical Features
+Label Encoding: Used for binary columns (gender, Partner, Dependents, etc.)
 
-## 🛠️ Next Steps
+One-Hot Encoding: Used for multi-category columns (InternetService, Contract, PaymentMethod, etc.)
 
-- Encode categorical features using Label Encoding / One-Hot Encoding
-- Balance the data using SMOTE
-- Train multiple models (Decision Tree, Logistic Regression, XGBoost)
-- Evaluate using F1-score, ROC AUC, confusion matrix
-- (Optional) Deploy on Azure / Flask API
+
+### ⚖️ 7. Handling Class Imbalance with SMOTE
+Applied SMOTE (Synthetic Minority Over-sampling Technique) to balance class distribution in training data:
+
+
+
+### 🤖 8. Model Training
+Trained multiple machine learning models using the balanced training set:
+
+Logistic Regression
+
+Decision Tree Classifier
+
+Random Forest Classifier
+
+XGBoost Classifier
+
+---
+
+### 🔁 9. Cross-Validation (5-Fold)
+Performed 5-Fold Cross-Validation using F1-score as the performance metric:
+Collected F1-score results for each model for comparison.
+
+---
+
+### 📈 10. Evaluation (Next Step)
+Models will be evaluated using:
+
+Confusion Matrix
+
+F1 Score
+
+ROC AUC Score
+
+Classification Report
+
+ROC Curve & Precision-Recall Curve Visualizations
+
+----
+
+### 💾 11. Model Saving (Planned)
+Will serialize:
+
+Trained models
+
+Encoders / transformers
+
+Using pickle for deployment or future use.
+
+---
+
+### 🚀 12. (Optional) Deployment
+Planned deployment:
+
+As a Flask API for serving predictions
+
+Hosting on Azure App Service or Streamlit as a web interface
+
+---
+
+🔗 Resources
+Dataset Source: Telco Customer Churn on Kaggle
+
+YouTube Tutorial Inspiration: IR Siddharthan – Project #22
+
+
 
 ---
 ## 🔗 Resources
