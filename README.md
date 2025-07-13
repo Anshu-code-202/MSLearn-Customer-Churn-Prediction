@@ -80,7 +80,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 5. Initial visual analysis of numerical features completed.
 
 ---
-#### Encoding Categorical Features
+### 6. Encoding Categorical Features
 Label Encoding: Used for binary columns (gender, Partner, Dependents, etc.)
 
 One-Hot Encoding: Used for multi-category columns (InternetService, Contract, PaymentMethod, etc.)
@@ -123,6 +123,17 @@ Classification Report
 
 ROC Curve & Precision-Recall Curve Visualizations
 
+*Evaluated on test set using:*
+
+Accuracy Score
+
+Confusion Matrix
+
+Classification Report
+
+ROC AUC Score
+
+
 ----
 
 ### 💾 11. Model Saving (Planned)
@@ -136,15 +147,21 @@ Using pickle for deployment or future use.
 
 ---
 
-### 🚀 12. (Optional) Deployment
-Planned deployment:
+### 🚀 12. Predict on New Customer Data
 
-As a Flask API for serving predictions
+Loaded saved model and encoders
 
-Hosting on Azure App Service or Streamlit as a web interface
+Created new customer input as dictionary
+
+Converted to DataFrame
+
+Applied encoding using saved encoders
+
+Ensured numeric columns were converted to float
+
+Predicted churn using the trained model
 
 ---
-
 🔗 Resources
 Dataset Source: Telco Customer Churn on Kaggle
 
