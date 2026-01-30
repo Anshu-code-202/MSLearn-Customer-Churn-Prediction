@@ -40,20 +40,20 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 
 
 
-### ✅ 3. Data Cleaning & Preprocessing
+###  3. Data Cleaning & Preprocessing
 - `customerID` column dropped (non-predictive).
 - `TotalCharges` column was originally of type `object`.
   - Invalid string entries (`" "`, `"<NA>"`, `""`, `"nan"`) were removed.
   - Column successfully converted to `float64`.
 - No missing values remain after cleaning.
 
-### ✅ 4. Target Distribution Analysis
+###  4. Target Distribution Analysis
 - `Churn` column shows **class imbalance**:
   - Majority: `No` (non-churners)
   - Minority: `Yes` (churners)
 - This imbalance will be handled using **SMOTE** in preprocessing.
 
-### ✅ 5. Numerical Feature Analysis (Ongoing)
+###  5. Numerical Feature Analysis (Ongoing)
 - Histograms plotted with KDE curves for features like:
   - `MonthlyCharges`
   - `TotalCharges`
@@ -62,7 +62,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 ---
 
 
-## 📊 Sample Visualizations
+##  Sample Visualizations
 
 > *(Add graphs/screenshots if uploading to GitHub)*
 
@@ -71,7 +71,7 @@ The dataset used for this project is the **Telco Customer Churn dataset**, publi
 
 ---
 
-## 🧠 Insights So Far
+##  Insights So Far
 
 1. `customerID` removed as it's not useful for modeling.
 2. Handled invalid entries in `TotalCharges` and converted it to float.
@@ -86,12 +86,12 @@ Label Encoding: Used for binary columns (gender, Partner, Dependents, etc.)
 One-Hot Encoding: Used for multi-category columns (InternetService, Contract, PaymentMethod, etc.)
 
 
-### ⚖️ 7. Handling Class Imbalance with SMOTE
+###  7. Handling Class Imbalance with SMOTE
 Applied SMOTE (Synthetic Minority Over-sampling Technique) to balance class distribution in training data:
 
 
 
-### 🤖 8. Model Training
+###  8. Model Training
 Trained multiple machine learning models using the balanced training set:
 
 Logistic Regression
@@ -104,13 +104,13 @@ XGBoost Classifier
 
 ---
 
-### 🔁 9. Cross-Validation (5-Fold)
+###  9. Cross-Validation (5-Fold)
 Performed 5-Fold Cross-Validation using F1-score as the performance metric:
 Collected F1-score results for each model for comparison.
 
 ---
 
-### 📈 10. Evaluation (Next Step)
+###  10. Evaluation (Next Step)
 Models will be evaluated using:
 
 Confusion Matrix
@@ -136,7 +136,7 @@ ROC AUC Score
 
 ----
 
-### 💾 11. Model Saving (Planned)
+###  11. Model Saving (Planned)
 Will serialize:
 
 Trained models
@@ -147,7 +147,7 @@ Using pickle for deployment or future use.
 
 ---
 
-### 🚀 12. Predict on New Customer Data
+###  12. Predict on New Customer Data
 
 Loaded saved model and encoders
 
@@ -162,7 +162,7 @@ Ensured numeric columns were converted to float
 Predicted churn using the trained model
 
 ---
-🔗 Resources
+ Resources
 Dataset Source: Telco Customer Churn on Kaggle
 
 YouTube Tutorial Inspiration: IR Siddharthan – Project #22
@@ -170,7 +170,7 @@ YouTube Tutorial Inspiration: IR Siddharthan – Project #22
 
 
 ---
-## 🔗 Resources
+##  Resources
 
 - Dataset Source: [Telco Customer Churn on Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 
